@@ -95,7 +95,6 @@
     "format": "prettier --write ../../ --ignore-path ../../.prettierignore",
     "lint": "tsc --noEmit --project tsconfig.eslint.json && eslint .",
     "lint:fix": "yarn lint --fix",
-    "prepack": "yarn build",
     "test": "jest",
     "test:ci": "yarn format && yarn lint && yarn test:coverage",
     "test:coverage": "yarn clean && yarn clean:openapi-validator && jest --coverage",
